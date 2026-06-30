@@ -23,7 +23,7 @@ Tensei extensions are headless Android apps (no UI) that run in the background.
 ## 📦 Data Contract
 
 The Main App sends two parameters to your `ContentProvider`:
-- `anime`: The English name of the anime (e.g., "BLUE LOCK").
+- `anime`: The English or Romaji name of the anime (e.g., "BLUE LOCK").
 - `anilistId`: The Anilist ID (e.g., "137822").
 
 Your scraper must return a JSON string in one of two formats:
