@@ -1,4 +1,4 @@
-package com.blissless.tensei_extension_template
+package com.blissless.oni_extension_template
 
 import android.content.ContentProvider
 import android.content.ContentValues
@@ -13,7 +13,7 @@ import kotlin.collections.iterator
 class ScraperProvider : ContentProvider() {
 
     companion object {
-        const val AUTHORITY = "com.blissless.tensei_extension_template.provider"
+        const val AUTHORITY = "com.blissless.oni_extension_template.provider"
         const val PATH_SCRAPE = "scrape"
         val CONTENT_URI: Uri = Uri.parse("content://$AUTHORITY/$PATH_SCRAPE")
         private const val CODE_SCRAPES = 1
@@ -31,7 +31,7 @@ class ScraperProvider : ContentProvider() {
     ): Cursor? {
         when (uriMatcher.match(uri)) {
             CODE_SCRAPES -> {
-                val animeName = uri.getQueryParameter("anime")
+                val animeName = uri.getQueryParameter("manga")
                 val anilistId = uri.getQueryParameter("anilistId")
                 val cursor = MatrixCursor(arrayOf("data"))
 

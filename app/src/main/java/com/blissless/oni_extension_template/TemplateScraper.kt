@@ -1,4 +1,4 @@
-package com.blissless.tensei_extension_template
+package com.blissless.oni_extension_template
 
 import android.content.Context
 
@@ -6,7 +6,7 @@ object TemplateScraper {
 
     // Return either a Map<Int, Map<String, String>> (for episodes)
     // OR a List<String> (for flat magnet links)
-    fun scrape(context: Context, animeName: String?, anilistId: String?): Any {
+    fun scrape(context: Context, mangaName: String?, anilistId: String?): Any {
         // TODO: Implement your scraping logic here
 
         // Example returning flat magnets:
